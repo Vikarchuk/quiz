@@ -7,11 +7,11 @@
 @section('main_content')
     <div class="col-xs-12">
         <div class="box">
+            @include('admin.parts.errorsChecking')
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('admin.categories.create') }}" title="Create a category"> <i class="fas fa-plus-circle"></i>
                 </a>
             </div>
-            <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
                 <table class="table table-hover">
                     <tbody><tr>

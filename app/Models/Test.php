@@ -47,4 +47,9 @@ class Test extends Model
     {
         return $this->hasMany(Question::class);
     }
+
+    public function attachCategories($arrayCategories){
+        $categories = Category::find($arrayCategories);
+        $this->categories()->attach($categories);
+    }
 }
